@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>מאמן פייתון</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="logo">🐍</span><span>מאמן פייתון</span></a>
+    <nav class="topnav">
+      <a href="#/" data-nav="home">בית</a>
+      <a href="#/exam" data-nav="exam">מבחן תרגול</a>
+      <a href="#/play" data-nav="play">מגרש משחקים</a>
+    </nav>
+    <div class="topprogress" title="תרגילים שנפתרו">
+      <div class="bar"><div class="fill" id="topFill"></div></div>
+      <span id="topCount">0/0</span>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="pyStatus" class="pystatus">טוען את פייתון…</div>
+  <div id="toast" class="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.min.js"></script>
+  <script src="course.js?v=2"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
